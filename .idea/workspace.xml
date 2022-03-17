@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -35,6 +36,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/app" />
     </key>
@@ -64,6 +66,8 @@
       <updated>1647442403352</updated>
       <workItem from="1647442405689" duration="20749000" />
       <workItem from="1647467078293" duration="48000" />
+      <workItem from="1647525067466" duration="11804000" />
+      <workItem from="1647542848719" duration="6497000" />
     </task>
     <servers />
   </component>

@@ -13,3 +13,28 @@ export interface ISelect {
     isSearchable: boolean;
     setRegion: Dispatch<SetStateAction<string>>
 }
+
+export interface ICountries {
+    countries: never[];
+    setCountries: Dispatch<SetStateAction<never[]>>;
+}
+
+export interface ICountry {
+    name: string;
+    capital: string;
+    region: string;
+    population: number;
+    flags: {png: string, svg: string};
+    independent: boolean;
+}
+
+export interface ICard {
+    img: string;
+    name: string;
+    info: {title: string, description: string}[];
+}
+
+export interface ICardList {
+    title: string,
+    description: string
+}
