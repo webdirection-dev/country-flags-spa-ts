@@ -36,8 +36,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/types" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/src/components/app" />
     </key>
   </component>
@@ -68,10 +70,20 @@
       <workItem from="1647467078293" duration="48000" />
       <workItem from="1647525067466" duration="11804000" />
       <workItem from="1647542848719" duration="6497000" />
+      <workItem from="1647551086355" duration="144000" />
+      <workItem from="1647786928591" duration="48000" />
+      <workItem from="1647787089700" duration="1289000" />
+      <workItem from="1647788649197" duration="14613000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/index.d.ts" />
+        <option value="$PROJECT_DIR$/src/index.d.ts" />
+      </list>
+    </option>
   </component>
 </project>

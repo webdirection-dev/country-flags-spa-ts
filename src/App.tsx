@@ -9,7 +9,8 @@ import Details from "./pages/Details";
 import NotFound from "./pages/NotFound";
 
 const App: React.FC = () => {
-    const [countries, setCountries] = useState([])
+    const [countries, setCountries] = useState<never[]>([])
+    const [isPreloading, setPreloading] = useState<boolean>(true)
 
     return (
         <>
@@ -17,7 +18,21 @@ const App: React.FC = () => {
             <Main>
                 <Routes>
                     <Route path='/' element={
-                        <HomePage countries={countries} setCountries={setCountries}/>
+                        <HomePage
+                            countries={countries}
+                            setCountries={setCountries}
+                            isPreloading={isPreloading}
+                            setPreloading={setPreloading}
+                        />
+                    } />
+
+                    <Route path='/country-flags-spa-ts' element={
+                        <HomePage
+                            countries={countries}
+                            setCountries={setCountries}
+                            isPreloading={isPreloading}
+                            setPreloading={setPreloading}
+                        />
                     } />
 
                     <Route path='/country/:name' element={<Details />} />

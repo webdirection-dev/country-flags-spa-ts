@@ -24,9 +24,20 @@ const Wrapper = styled.div`
   }
 `
 
-const Controls: React.FC = () => {
+interface IProps {
+    handleSearch: (search: string, region: string) => void
+}
+
+const Controls: React.FC<IProps> = ({handleSearch}) => {
     const [isSearch, setSearch] = useState('')
-    const [isRegion, setRegion] = useState('')
+    const [isRegion, setRegion] = useState<{value: string, label: string}>({value: '', label: ''})
+
+    useEffect(() => {
+        const regionValue = isRegion?.value || ''
+
+        handleSearch(isSearch, regionValue)
+        // eslint-disable-next-line
+    }, [isSearch, isRegion])
 
     return(
         <Wrapper>
@@ -36,12 +47,12 @@ const Controls: React.FC = () => {
             />
 
             <CustomSelect
-                isRegion={isRegion}
-                placeholder='Filter by Region'
                 options={options}
+                placeholder='Filter by Region'
                 isClearable={true}
                 isSearchable={false}
                 setRegion={setRegion}
+                // isRegion={isRegion}
             />
         </Wrapper>
     )

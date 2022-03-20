@@ -4,6 +4,7 @@ import {Container} from "./Container";
 
 const Wrapper = styled.main`
   padding: 2rem 1rem;
+  position: relative;
   
   @media(min-width: 767px) {
     padding: 4rem 1rem;

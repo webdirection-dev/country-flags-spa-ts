@@ -6,17 +6,28 @@ export interface ISearch {
 }
 
 export interface ISelect {
-    isRegion: string;
+    // isRegion: string;
     placeholder: string;
     options: {value: string, label: string}[];
     isClearable: boolean;
     isSearchable: boolean;
-    setRegion: Dispatch<SetStateAction<string>>
+    setRegion: any;
+    // setRegion: Dispatch<SetStateAction<string>>
 }
 
 export interface ICountries {
     countries: never[];
     setCountries: Dispatch<SetStateAction<never[]>>;
+}
+
+// export interface ICountries {
+//     countries: never[];
+//     setCountries: Dispatch<SetStateAction<never[]>>;
+// }
+
+export interface IPreloader {
+    isPreloading: boolean;
+    setPreloading: Dispatch<SetStateAction<boolean>>;
 }
 
 export interface ICountry {

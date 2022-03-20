@@ -51,7 +51,7 @@ const MySelect = styled(Select).attrs({
 
 const CustomSelect: React.FC<ISelect> = (props) => {
     const {
-        isRegion,
+        // isRegion,
         placeholder,
         options,
         isClearable,
@@ -67,7 +67,7 @@ const CustomSelect: React.FC<ISelect> = (props) => {
                 options={options}
                 isClearable={isClearable}
                 isSearchable={isSearchable}
-                // onChange={setRegion}
+                onChange={setRegion}
             />
         </div>
     )
